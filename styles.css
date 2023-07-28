@@ -11,9 +11,10 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  
-  
 }
+
+
+/* NAVBAR */
 
 nav {
   
@@ -43,24 +44,19 @@ ul {
   background-color: none;
   padding-right: 30px;
   margin-right: 50px;
-  ;
-
   
 }
 
 li {
   margin-left: 20px;
-  
-  
 }
 
-.cool-link {
-    
+.under-line {
     display: inline-block;
     text-decoration: none;
 }
 
-.cool-link::after {
+.under-line::after {
     content: '';
     display: block;
     width: 0;
@@ -69,14 +65,13 @@ li {
     transition: width .3s;
 }
 
-.cool-link:hover::after {
+.under-line:hover::after {
     width: 110%;
-    /*transition: width .3s*/;
 }
 
-#water {
-  width: 100px;
-}
+
+
+/*INTRODUCTION */
 
 .intro {
   text-align: center;
@@ -87,7 +82,6 @@ li {
 
  h1 {
   color: #221D4F;
-  font-family: 'Ubuntu';
   margin: 20px;
   font-size: 30px;
 }
@@ -104,7 +98,6 @@ li {
 #tech {
   margin-top: -30px;
   width: 700px;
-  
   
 }
 
@@ -133,6 +126,10 @@ li {
   
 }
 
+
+
+/* PROGRAMMING SKILLS */
+
 .skills {
   display: grid;
 grid-template-columns: 1fr 1fr;
@@ -143,7 +140,6 @@ background-color: white;
 width: 80%;
 max-width: 800px;
 margin: 0 auto;
-
 border-radius: 20px;
 position: relative;
 bottom: 200px;
@@ -181,11 +177,15 @@ border: 1px solid #c0c0c2;
   color: #6F00FF;
 }
 
+
+
+/* PERSONAL PROJECTS */
+
 #projects {
   text-align: center;
 }
 
-#projects p{
+#projects {
   
   font-family: 'Inter';
   
@@ -259,6 +259,7 @@ button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
 }
 
 button:hover {
@@ -267,30 +268,17 @@ button:hover {
   cursor: pointer;
 }
 
+
+
+
+/* FOOTER */
+
 footer {
   width: 100%;
   height: 300px;
   background-color: #6F00FF;
   padding: 10px;
   margin-top: 100px;
-}
-
-.quote {
-  text-align: center;
-  color: white;
-  width: 70%;
-  max-width: 800px;
-  min-width: 200px;
-  height: 90px;
-  border-radius: 10px;
-  background-color: #001D4F;
-  margin: 0 auto;
-  position: relative;
-  bottom: 50px;
-}
-.quote p {
-  font-family: 'inter';
-  font-size: 13px;
 }
 
 .social-icons {
@@ -302,6 +290,7 @@ footer {
   background-color: none;
   display: flex;
   justify-content: space-evenly;
+
 }
 .icons {
   color: white;
@@ -324,6 +313,11 @@ footer {
   margin: 50px AUTO;
   background-color: none;
 }
+
+
+
+/*MEDIA QUERIES */
+
 @media only screen and (max-width: 1200px) {
   .projects {
     
@@ -360,7 +354,7 @@ footer {
     padding-left: 20px;
   }
 
-  .cool-link::after {
+  .under-line::after {
 
     height: 2px;
     
@@ -409,7 +403,12 @@ footer {
   background-color: #001D4F;
   height: 295px;
   width: var(--img-width);
+
   
+}
+
+a:hover {
+  transform: scale(1.03);
 }
 
 }
