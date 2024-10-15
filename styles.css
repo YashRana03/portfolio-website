@@ -95,7 +95,7 @@ h1 {
   color: white;
   background-color: #6f00ff;
   padding: 30px;
-  font-size: 13px;
+  font-size: 15px;
   position: relative;
   top: -100px;
   height: 400px;
@@ -107,7 +107,7 @@ h1 {
   top: 50px;
 }
 .monologue p {
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Inter", sans-serif;
   text-align: center;
   width: 80%;
@@ -145,7 +145,7 @@ h1 {
   margin: 10px auto;
   line-height: 20px;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -190,11 +190,17 @@ h1 {
   margin: 0 auto;
 }
 
+.projects img {
+
+  object-fit: cover;
+}
+
 .img-project {
   width: var(--img-width);
   height: var(--img-height);
   border: 0.5px solid black;
 }
+
 .project-icon {
   background-color: #001d4f;
   height: 345px;
@@ -257,7 +263,7 @@ footer {
   margin: 0 auto;
   margin-top: 80px;
   width: 60%;
-  max-width: 350px;
+  max-width: 250px;
   min-width: 180px;
   background-color: none;
   display: flex;
@@ -267,7 +273,7 @@ footer {
   color: white;
   border: 2px solid white;
   border-radius: 50%;
-  padding: 7px;
+  padding: 6px 7px;
 }
 
 .icons:hover {
@@ -362,6 +368,9 @@ footer {
 
   a:hover {
     transform: scale(1.03);
+  }
+  .monologue p {
+    font-size: 12px;
   }
 }
 
